@@ -1,0 +1,134 @@
+/* src/components/TestimonialPage.css */
+
+.testimonial-page {
+    margin: 0 auto;
+  
+    padding: 2rem;
+}
+
+.testimonial-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.testimonial-header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.testimonial-header .description {
+    font-size: 1rem;
+    color: #666;
+    text-align: right;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    grid-template-areas:
+        "a a"
+        "b c"
+        "d d";
+}
+
+.item-a {
+    grid-area: a;
+    background-color: #f0f0f0; /* Adjust the color as needed */
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.item-b {
+    grid-area: b;
+    background-color: #e0f7fa; /* Adjust the color as needed */
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.item-c {
+    grid-area: c;
+    background-color: #e8f5e9; /* Adjust the color as needed */
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.item-d {
+    grid-area: d;
+    background-color: #000; /* Adjust the color as needed */
+    padding: 1rem;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s;
+}
+
+.testimonial-card p {
+    font-size: 1.5rem; /* Increased font size for clarity */
+    margin-bottom: 1rem;
+    font-weight: bolder;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.profile h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.profile p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #555;
+}
+
+.community-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.community-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.join-community {
+    background: #4caf50;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.join-community:hover {
+    background: #388e3c;
+}
+
+.testimonial-card:hover, .community-card:hover {
+    transform: translateY(-5px);
+}

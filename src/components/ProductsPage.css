@@ -1,0 +1,99 @@
+/* src/components/ProductsPage.css */
+
+.products-page {
+    margin: 0 auto;
+ /* Adjust as needed for page width */
+    padding: 1rem;
+}
+
+.products-page h1 {
+    font-size: 2rem; /* Adjust as needed */
+    margin-bottom: 1rem;
+    text-align: center; /* Center the title */
+}
+
+.view-all {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: #018d43; /* Adjust color as needed */
+}
+
+.view-all span {
+    margin-right: 0.5rem;
+}
+
+.view-all-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #000;
+    border-radius: 50%;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.view-all:hover .view-all-icon {
+    transform: scale(1.1);
+    background-color: #018d43;
+    color: #fff;
+}
+
+.view-all:hover {
+    color: #018d43;
+    text-decoration: none;
+}
+
+.products-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Ensure all items are on a single line */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.product-card {
+    flex: 0 0 23%; /* Adjust the width to fit 4 items per row */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.625rem; /* 10px equivalent */
+    padding: 1rem;
+    transition: transform 0.3s;
+    min-width: 200px; /* Ensure a minimum width for each card */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.625rem; /* 10px equivalent */
+    margin-bottom: 1rem;
+}
+
+.product-card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-card .stars {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold; /* Make the text bold */
+}

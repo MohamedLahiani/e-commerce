@@ -1,0 +1,78 @@
+/* src/components/ShopPage.css */
+
+.shop-page {
+    margin: 0 auto;
+
+    padding: 2rem;
+}
+
+.shop-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.category-section {
+    margin-bottom: 2rem;
+}
+
+.category-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+    padding: 1rem;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem;
+}
+
+.product-card .stars {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.buy-button {
+    padding: 10px 20px;
+    background-color: #018D34; /* Accent */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #016f28; /* Darker Accent */
+}

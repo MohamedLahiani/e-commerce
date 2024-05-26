@@ -1,0 +1,244 @@
+/* src/components/Home.css */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.hero-text {
+    flex: 1;
+    padding: 1rem;
+}
+
+.hero-text .labels {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text .label {
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text .highlight {
+    color: #4caf50;
+}
+
+.hero-text p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.buttons .shop-now, .buttons .explore {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.buttons .shop-now {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.buttons .explore {
+    background-color: #fff;
+    color: #4caf50;
+    border: 1px solid #4caf50;
+}
+
+.buttons .shop-now:hover {
+    background-color: #388e3c;
+}
+
+.buttons .explore:hover {
+    background-color: #f0f0f0;
+}
+
+.hero-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.hero-icons .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.hero-icons .icon-container:hover {
+    transform: scale(1.1);
+}
+
+.hero-icon {
+    width: 100%;
+    height: auto;
+}
+
+.hero-image {
+    flex: 1;
+    position: relative;
+    padding: 1rem;
+}
+
+.hero-image .main-image {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.hero-image:hover .main-image {
+    transform: scale(1.05);
+}
+
+.hero-image .info-box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: auto;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.hero-image .info-box p {
+    font-size: 0.9rem;
+}
+
+.hero-image:hover .info-box {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.product-highlight-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.product-highlight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.product-description {
+    flex: 1;
+}
+
+.product-description h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-description p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.explore-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.explore-icon p {
+    margin: 0;
+}
+
+.icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+.arrow {
+    font-size: 1.5rem;
+}
+
+.explore-icon:hover {
+    transform: scale(1.1);
+    color: #4caf50;
+}
+
+.product-image-container {
+    position: relative;
+    width: 100%;
+}
+
+.product-image-container .product-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
+    transition: transform 0.3s;
+}
+
+.product-image-container:hover .product-image {
+    transform: scale(1.05);
+}
+
+.product-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.product-info .label {
+    background-color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+.product-image-container:hover .product-info {
+    background-color: rgba(255, 255, 255, 1);
+}

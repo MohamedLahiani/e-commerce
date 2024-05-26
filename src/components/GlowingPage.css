@@ -1,0 +1,118 @@
+.glowing-page {
+  
+    margin: 0 auto;
+
+}
+
+.top-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h1 {
+    font-size: 2rem; /* Adjust as needed */
+    margin-bottom: 1rem;
+}
+
+.text-content .paragraphs {
+    display: flex;
+    gap: 1rem;
+}
+
+.text-content p {
+    font-size: 1rem; /* Adjust as needed */
+    margin-bottom: 1rem;
+}
+
+.image-content {
+    flex: 1;
+}
+
+.image-content img {
+    width: 50%;
+    height: auto;
+    border-radius: 0.625rem; /* 10px equivalent */
+}
+
+@media (min-width: 48rem) { /* 768px equivalent for larger screens */
+    .top-section {
+        flex-direction: row;
+    }
+
+    .text-content {
+        padding-right: 2rem;
+    }
+
+    .image-content {
+        flex: 1;
+    }
+}
+
+.products-section {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.product1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 25%; /* Adjusted dimensions */
+}
+
+.product1 img {
+    width: 100%;
+    height: 15rem; /* Fixed height */
+    object-fit: cover;
+    border-radius: 0.625rem; /* 10px equivalent */
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.product-details h1 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.product-categories {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0.5rem 0;
+    width: 100%; /* Ensure it takes the full width */
+}
+
+.category {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.category:hover {
+    background-color: #018d43;
+    color: #fff;
+}
+
+
+@media (max-width: 48rem) { /* Adjustments for smaller screens */
+    .product1 {
+        flex: 1 1 45%; /* Adjust as needed */
+    }
+}
